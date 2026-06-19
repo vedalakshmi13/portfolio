@@ -1,0 +1,463 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vedalakshmi J | Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --bg-color:#081b29;
+    --second-bg:#112e42;
+    --main-color:#00abf0;
+    --text-color:#ffffff;
+    --shadow:0 0 20px rgba(0,171,240,.4);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:var(--bg-color);
+    color:var(--text-color);
+}
+
+/* Header */
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    padding:20px 10%;
+    background:rgba(8,27,41,.95);
+    backdrop-filter:blur(10px);
+    z-index:100;
+    box-shadow:0 0 10px rgba(0,171,240,.3);
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:var(--main-color);
+    font-size:30px;
+    font-weight:700;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:.4s;
+}
+
+nav ul li a:hover{
+    color:var(--main-color);
+}
+
+/* Sections */
+
+section{
+    min-height:100vh;
+    padding:120px 10%;
+}
+
+h1{
+    text-align:center;
+    color:var(--main-color);
+    font-size:50px;
+    margin-bottom:50px;
+}
+
+/* Home */
+
+.home{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.home-content h1{
+    font-size:65px;
+}
+
+.home-content span{
+    color:var(--main-color);
+}
+
+.home-content h2{
+    margin-top:20px;
+    font-weight:500;
+}
+
+.home-content p{
+    margin-top:20px;
+    font-size:20px;
+    color:#d8d8d8;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:35px;
+    padding:15px 35px;
+    background:var(--main-color);
+    color:black;
+    text-decoration:none;
+    border-radius:40px;
+    font-weight:600;
+    transition:.5s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    box-shadow:var(--shadow);
+}
+
+/* Box */
+
+.box{
+    background:var(--second-bg);
+    padding:40px;
+    border-radius:20px;
+    line-height:2;
+    box-shadow:var(--shadow);
+}
+
+/* Container */
+
+.container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+/* Skill Cards */
+
+.card{
+    width:250px;
+    padding:40px;
+    text-align:center;
+    background:var(--second-bg);
+    border-radius:20px;
+    transition:.5s;
+}
+
+.card h2{
+    color:var(--main-color);
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:var(--shadow);
+}
+
+/* Project Cards */
+
+.project-card{
+    width:400px;
+    background:var(--second-bg);
+    padding:30px;
+    border-radius:20px;
+    transition:.5s;
+}
+
+.project-card h2{
+    color:var(--main-color);
+    margin-bottom:20px;
+}
+
+.project-card p{
+    line-height:1.8;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+    box-shadow:var(--shadow);
+}
+
+/* Education */
+
+.edu-card{
+    background:var(--second-bg);
+    padding:40px;
+    border-radius:20px;
+    box-shadow:var(--shadow);
+}
+
+/* Contact */
+
+.contact-box{
+    background:var(--second-bg);
+    padding:40px;
+    border-radius:20px;
+    box-shadow:var(--shadow);
+}
+
+.contact-box p{
+    margin:20px 0;
+}
+
+.contact-box a{
+    color:var(--main-color);
+    text-decoration:none;
+}
+
+.contact-box a:hover{
+    text-decoration:underline;
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+    background:#06131d;
+    padding:25px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    margin-top:20px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+nav ul li{
+    margin:10px;
+}
+
+.home-content h1{
+    font-size:45px;
+}
+
+.project-card{
+    width:100%;
+}
+
+.card{
+    width:100%;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+
+<nav>
+
+<h2 class="logo">Vedalakshmi J</h2>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+</header>
+
+<!-- Home -->
+
+<section class="home">
+
+<div class="home-content">
+
+<h1>Hello, I'm <span>Vedalakshmi J</span></h1>
+
+<h2>Computer Science and Engineering Student</h2>
+
+<p>Python Developer | Web Developer | AI Enthusiast</p>
+
+<a href="#contact" class="btn">Contact Me</a>
+
+</div>
+
+</section>
+
+<!-- About -->
+
+<section id="about">
+
+<h1>About Me</h1>
+
+<div class="box">
+
+<p>
+I am Vedalakshmi J, a Bachelor of Computer Science and Engineering student at Anna University.
+I am passionate about software development, Artificial Intelligence and web technologies.
+I enjoy creating innovative projects and continuously learning new technologies.
+My goal is to become a skilled software engineer and contribute to real-world applications.
+</p>
+
+</div>
+
+</section>
+
+<!-- Skills -->
+
+<section id="skills">
+
+<h1>Skills</h1>
+
+<div class="container">
+
+<div class="card">
+<h2>Python</h2>
+</div>
+
+<div class="card">
+<h2>HTML</h2>
+</div>
+
+<div class="card">
+<h2>CSS</h2>
+</div>
+
+<div class="card">
+<h2>Java</h2>
+</div>
+
+</div>
+
+</section>
+
+<!-- Projects -->
+
+<section id="projects">
+
+<h1>Projects</h1>
+
+<div class="container">
+
+<div class="project-card">
+
+<h2>Real-Time Sign Detection</h2>
+
+<p>
+Developed an AI-based sign language detection system using computer vision techniques for real-time recognition.
+</p>
+
+</div>
+
+<div class="project-card">
+
+<h2>AI Healthcare Prediction Using Patient Database</h2>
+
+<p>
+Built an intelligent healthcare prediction system using patient data for disease prediction and analysis.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Education -->
+
+<section id="education">
+
+<h1>Education</h1>
+
+<div class="edu-card">
+
+<h2>Bachelor of Computer Science and Engineering</h2>
+
+<br>
+
+<h3>Anna University</h3>
+
+<br>
+
+<p>2022 - 2026</p>
+
+</div>
+
+</section>
+
+<!-- Contact -->
+
+<section id="contact">
+
+<h1>Contact Me</h1>
+
+<div class="contact-box">
+
+<p>📞 <b>Phone :</b> +91 XXXXX XXXXX</p>
+
+<p>
+📧 <b>Email :</b>
+<a href="mailto:oviya517@gmail.com">
+oviya517@gmail.com
+</a>
+</p>
+
+<p>
+💻 <b>GitHub :</b>
+<a href="https://github.com/vedalakshmi13" target="_blank">
+github.com/vedalakshmi13
+</a>
+</p>
+
+<p>
+🔗 <b>LinkedIn :</b>
+<a href="#">
+linkedin.com/in/vedalakshmi
+</a>
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Vedalakshmi J | Portfolio Website</p>
+
+</footer>
+
+</body>
+</html>
+```
